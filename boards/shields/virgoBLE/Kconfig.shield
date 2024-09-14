@@ -1,0 +1,14 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_VIRGOBLE_DONGLE
+    def_bool $(shields_list_contains,virgoBLE_dongle)
+
+config SHIELD_VIRGOBLE_LEFT
+    def_bool $(shields_list_contains,virgoBLE_left)
+
+config SHIELD_VIRGOBLE_RIGHT
+    def_bool $(shields_list_contains,virgoBLE_right)
+
+config SHIELD_VIRGOBLE_TST
+    def_bool $(shields_list_contains,virgoBLE_tst)

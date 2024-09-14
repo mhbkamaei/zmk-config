@@ -1,0 +1,22 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    # Additional modules containing boards/shields/custom code can be listed here as well
+    - name: caksoylar # <-- new entry
+      url-base: https://github.com/caksoylar
+    - name: mhbkamaei # <-- new entry
+      url-base: https://github.com/mhbkamaei
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-rgbled-widget # <-- new entry
+      remote: caksoylar
+      revision: main
+    - name: zmk-led-module # <-- new entry
+      remote: mhbkamaei
+      revision: main
+  self:
+    path: config

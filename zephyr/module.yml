@@ -1,0 +1,4 @@
+name: virgoBLE
+build:
+  settings:
+    board_root: .

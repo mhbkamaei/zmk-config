@@ -1,0 +1,41 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config ZMK_SPLIT
+    default y
+
+config LED_WIDGET
+    default y
+
+config NFCT_PINS_AS_GPIOS
+    default y
+    depends on HAS_HW_NRF_NFCT && SOC_FAMILY_NRF
+
+if SHIELD_VIRGOBLE_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "virgoBLE"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+    default y
+
+endif
+
+if SHIELD_VIRGOBLE_TST || SHIELD_VIRGOBLE_LEFT  || SHIELD_VIRGOBLE_RIGHT
+
+config ZMK_KSCAN_DEBOUNCE_PRESS_MS
+    default 1
+
+config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
+    default 5
+
+endif

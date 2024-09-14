@@ -1,0 +1,9 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_HOLYIOT_YJ_16048
+
+config BOARD
+    default "holyiot_yj_16048"
+
+endif # BOARD_HOLYIOT_YJ_16048
