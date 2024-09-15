@@ -4,8 +4,4 @@
         led-green = &led1;
         led-blue = &led2;
     };
-
-    leds {
-        status = "okay";
-    };
 };
