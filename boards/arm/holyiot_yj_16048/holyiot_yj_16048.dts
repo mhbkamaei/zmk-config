@@ -30,6 +30,9 @@
 	};
 
     aliases {
+	led0 = &led0;
+	led1 = &led1;
+	led2 = &led2;
         led-red = &led0;
         led-green = &led1;
         led-blue = &led2;
