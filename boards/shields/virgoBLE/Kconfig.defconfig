@@ -1,9 +1,6 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config BOOTLOADER_MCUBOOT
-    default y
-
 config ZMK_SPLIT
     default y
 
