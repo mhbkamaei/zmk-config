@@ -4,13 +4,6 @@
 config ZMK_SPLIT
     default y
 
-config LED_WIDGET
-    default y
-
-config NFCT_PINS_AS_GPIOS
-    default y
-    depends on HAS_HW_NRF_NFCT && SOC_FAMILY_NRF
-
 if SHIELD_VIRGOBLE_DONGLE
 
 config ZMK_KEYBOARD_NAME
