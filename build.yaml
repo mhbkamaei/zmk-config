@@ -30,3 +30,5 @@ include:
     shield: virgoBLE_tst
   - board: holyiot_yj_16048
     shield: virgoBLE_dongle
+  - board: holyiot_yj16019
+    sheild: virgoBLE_dongle
