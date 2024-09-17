@@ -4,9 +4,6 @@
 config ZMK_SPLIT
     default y
 
-config BOOTLOADER_MCUBOOT
-    default y
-
 if SHIELD_VIRGOBLE_DONGLE
 
 config ZMK_KEYBOARD_NAME
