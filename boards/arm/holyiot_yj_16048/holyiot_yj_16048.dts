@@ -6,7 +6,7 @@
 
 /dts-v1/;
 #include <nordic/nrf52832_qfaa.dtsi>
-#include "adafruit_partition.dtsi"
+#include "code_partition.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -30,9 +30,6 @@
 	};
 
     aliases {
-	led0 = &led0;
-	led1 = &led1;
-	led2 = &led2;
         led-red = &led0;
         led-green = &led1;
         led-blue = &led2;
