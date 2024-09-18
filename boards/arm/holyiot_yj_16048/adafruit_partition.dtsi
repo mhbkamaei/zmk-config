@@ -22,7 +22,7 @@
             reg = <0x00000000 0x0007a000>;
         };
 
-        /* Set 24KiB of storage at the end of the 256KiB of flash */
+        /* Set 24KiB of storage at the end of the 512KiB of flash */
         storage_partition: partition@7a000 {
             reg = <0x0007a000 0x00006000>;
         };
