@@ -1,16 +1,13 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config BUILD_OUTPUT_HEX
-    default y
-
 config ZMK_SPLIT
     default y
 
-if SHIELD_VIRGOBLE_DONGLE
-
 config ZMK_KEYBOARD_NAME
     default "virgoBLE"
+
+if SHIELD_VIRGOBLE_DONGLE
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
