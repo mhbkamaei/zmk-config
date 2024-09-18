@@ -1,6 +1,9 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+config BUILD_OUTPUT_HEX
+    default y
+
 config ZMK_SPLIT
     default y
 
