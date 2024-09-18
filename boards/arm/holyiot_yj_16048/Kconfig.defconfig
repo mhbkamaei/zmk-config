@@ -3,7 +3,13 @@
 
 if BOARD_HOLYIOT_YJ_16048
 
+config BOARD
+    default "holyiot_yj_16048"
+
+config ZMK_KEYBOARD_NAME
+    default "virgoBLE"
+
 config BT_CTLR
-	default BT
+    default BT
 
 endif # BOARD_HOLYIOT_YJ_16048
