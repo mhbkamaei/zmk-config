@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <behaviors/rgbled_widget.dtsi>
 #include <behaviors.dtsi>
 
 / {
@@ -18,7 +17,7 @@
             bindings = <
                 &kp Q      &kp W      &bt BT_CLR     &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A	   &kp S      &out OUT_TOG   &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp QUOT
-                &kp Z      &kp X      &ind_con       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
+                &kp Z      &kp X      &kp C      &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
                                                      &kp A          &kp B         &kp SPACE        &kp BKSP
             >;
         };
