@@ -19,7 +19,7 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: virgoBLE_dongle
+    shield: virgoBLE_dongle rgbled_adapter
   - board: holyiot_yj_16048
     shield: virgoBLE_left
   - board: holyiot_yj_16048
