@@ -1,0 +1,5 @@
+board:
+  name: holyiot_yj_16048
+  vendor: holyiot
+  socs:
+  - name: nrf52832
