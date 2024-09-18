@@ -11,7 +11,7 @@
 
 / {
     model = "HOLYIOT_YJ_16048 Board";
-	compatible = "holyiot_yj_16048", "nordic,nrf52832-qfaa", "nordic,nrf52832";
+	compatible = "holyiot_yj_16048";
 
 	leds {
 		compatible = "gpio-leds";
