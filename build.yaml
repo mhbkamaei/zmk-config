@@ -26,7 +26,7 @@ include:
     shield: virgoBLE_right
   - board: seeeduino_xiao_ble
     shield: settings_reset
-  - boaed: seeeduino_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: virgoBLE_tst
   - board: holyiot_yj_16048
     shield: virgoBLE_dongle
