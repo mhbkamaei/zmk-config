@@ -7,6 +7,8 @@ manifest:
       url-base: https://github.com/caksoylar
     #- name: mhbkamaei # <-- new entry
     #  url-base: https://github.com/mhbkamaei
+    - name: mcu-tools
+      url-base: https://github.com/mcu-tools
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -18,5 +20,8 @@ manifest:
     #- name: zmk-led-module # <-- new entry
      # remote: mhbkamaei
      # revision: main
+    - name: mcuboot
+      remote: mcu-tools
+      revision: main
   self:
     path: config
