@@ -23,11 +23,11 @@
 		};
 		slot0_partition: partition@8000 {
 			label = "image-0";
-			reg = <0x8000 0x38000>;
+			reg = <0x8000 0x41000>;
 		};
-		slot1_partition: partition@40000 {
+		slot1_partition: partition@49000 {
 			label = "image-1";
-			reg = <0x40000 0x38000>;
+			reg = <0x49000 0x2f000>;
 		};
 		scratch_partition: partition@78000 {
 			label = "image-scratch";
