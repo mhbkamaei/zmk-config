@@ -19,15 +19,15 @@
 
 		boot_partition: partition@0 {
 			label = "mcuboot";
-			reg = <0x0 0xc000>;
+			reg = <0x0 0x8000>;
 		};
 		slot0_partition: partition@c000 {
 			label = "image-0";
-			reg = <0xc000 0x32000>;
+			reg = <0x8000 0x34000>;
 		};
 		slot1_partition: partition@3e000 {
 			label = "image-1";
-			reg = <0x3e000 0x32000>;
+			reg = <0x3c000 0x34000>;
 		};
 		scratch_partition: partition@70000 {
 			label = "image-scratch";
