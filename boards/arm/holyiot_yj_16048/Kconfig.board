@@ -27,8 +27,8 @@ config NCS_SAMPLE_MCUMGR_BT_OTA_DFU
 	imply FLASH
 	imply MCUMGR_GRP_IMG
 	imply MCUMGR_GRP_OS
-	imply MCUMGR_GRP_OS_BOOTLOADER_INFO
-	imply MCUMGR_TRANSPORT_BT_REASSEMBLY
+#	imply MCUMGR_GRP_OS_BOOTLOADER_INFO
+#	imply MCUMGR_TRANSPORT_BT_REASSEMBLY
 	help
 	  Enable this option to include MCUmgr in the build which will enable
 	  the Bluetooth transport and image management group, which allows
