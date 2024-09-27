@@ -31,6 +31,8 @@ config NCS_SAMPLE_MCUMGR_BT_OTA_DFU
 	imply MCUMGR_TRANSPORT_BT_REASSEMBLY
 	imply NORDIC_QSPI_NOR if $(dt_chosen_enabled,$(DT_CHOSEN_EXT_FLASH))
 	imply NCS_SAMPLE_MCUMGR_BT_OTA_DFU_SPEEDUP
+	depends on BT_PERIPHERAL
+	depends on BOOTLOADER_MCUBOOT
 	help
 	  Enable this option to include MCUmgr in the build which will enable
 	  the Bluetooth transport and image management group, which allows
@@ -108,41 +110,3 @@ config NRF53_UPGRADE_NETWORK_CORE
 endif # SOC_SERIES_NRF53X
 
 endif # NCS_SAMPLE_MCUMGR_BT_OTA_DFU
-
-config NCS_SAMPLE_MCUMGR_BT_OTA_DFU_SPEEDUP
-	bool "MCUmgr OTA DFU speedup"
-	depends on BT_CTLR || (NCS_SAMPLE_HCI_IPC_CHILD_IMAGE || NCS_SAMPLE_MULTIPROTOCOL_RPMSG_CHILD_IMAGE)
-	help
-	  Enable this option to speed up the OTA DFU transfer over Bluetooth.
-	  This option extends the Bluetooth buffers to extend Bluetooth MTU
-	  size. The buffer configuration should be the same in the Network Core
-	  and Application Core image.
-
-	  This configuration option is automatically applied for the Network
-	  Core child image if the NCS_SAMPLE_MCUMGR_BT_OTA_DFU_SPEEDUP option is
-	  enabled in the main image.
-
-if NCS_SAMPLE_MCUMGR_BT_OTA_DFU_SPEEDUP
-
-config BT_L2CAP_TX_MTU
-	default 498 if BT_HCI_HOST
-
-config BT_BUF_ACL_TX_SIZE
-	default 251
-
-config BT_BUF_ACL_RX_SIZE
-	default 502
-
-config BT_CTLR_DATA_LENGTH_MAX
-	default 251 if BT_CTLR
-
-endif # NCS_SAMPLE_MCUMGR_BT_OTA_DFU_SPEEDUP
-
-config NCS_SAMPLE_MCUMGR_BT_OTA_DFU_VALIDATION
-	bool "MCUmgr OTA DFU build time validation"
-	default y
-	depends on NCS_SAMPLE_MCUMGR_BT_OTA_DFU || NCS_SAMPLE_MCUMGR_BT_OTA_DFU_SPEEDUP
-	help
-	  Enable this option to validate the MCUmgr OTA DFU configuration at the
-	  build time. If the project configuration does not match predefined
-	  defaults, the build system issues a warning for each misaligned item.
