@@ -5,7 +5,7 @@ CONFIG_SOC_SERIES_NRF52X=y
 CONFIG_SOC_NRF52832_QFAA=y
 
 # enable MPU
-CONFIG_ARM_MPU=y
+#CONFIG_ARM_MPU=y
 
 # 32KHz clock source
 CONFIG_CLOCK_CONTROL_NRF_K32SRC_XTAL=y
@@ -21,9 +21,9 @@ CONFIG_PINCTRL=y
 CONFIG_FLASH=y
 CONFIG_FLASH_PAGE_LAYOUT=y
 CONFIG_FLASH_MAP=y
-CONFIG_NVS=y
-CONFIG_SETTINGS=y
-CONFIG_SETTINGS_NVS=y
+#CONFIG_NVS=y
+#CONFIG_SETTINGS=y
+#CONFIG_SETTINGS_NVS=y
 
 ## we only have ble
 CONFIG_ZMK_USB=n
@@ -51,11 +51,7 @@ CONFIG_MCUMGR_TRANSPORT_BT_AUTHEN=n
 CONFIG_MCUMGR_TRANSPORT_BT_CONN_PARAM_CONTROL=y
 
 # Enable the Shell mcumgr transport.
-CONFIG_BASE64=n
-CONFIG_CRC=n
-CONFIG_SHELL=n
-CONFIG_SHELL_BACKEND_SERIAL=n
-CONFIG_MCUMGR_TRANSPORT_SHELL=n
+
 
 # Enable the mcumgr Packet Reassembly feature over Bluetooth and its configuration dependencies.
 # MCUmgr buffer size is optimized to fit one SMP packet divided into five Bluetooth Write Commands,
