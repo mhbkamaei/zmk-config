@@ -9,6 +9,9 @@ config ZMK_KEYBOARD_NAME
 
 if SHIELD_VIRGOBLE_DONGLE
 
+config ZMK_KEYBOARD_NAME
+    default "virgoBLE"
+
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
@@ -32,3 +35,18 @@ config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
     default 5
 
 endif
+
+if SHIELD_VIRGOBLE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "virgoBLE-right"
+
+endif
+
+if SHIELD_VIRGOBLE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "virgoBLE-left"
+
+endif
+
