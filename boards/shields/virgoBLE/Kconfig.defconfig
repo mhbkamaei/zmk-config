@@ -4,9 +4,6 @@
 config ZMK_SPLIT
     default y
 
-config ZMK_KEYBOARD_NAME
-    default "virgoBLE"
-
 if SHIELD_VIRGOBLE_DONGLE
 
 config ZMK_KEYBOARD_NAME
