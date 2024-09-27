@@ -85,26 +85,4 @@ endif # NORDIC_QSPI_NOR
 
 # Align supported targets with their default MCUboot configuration.
 
-# nRF53 series
-if SOC_SERIES_NRF53X
-
-# Thingy53: mcuboot/boot/zephyr/boards/thingy53_nrf5340_cpuapp.conf
-if BOARD_THINGY53_NRF5340_CPUAPP || BOARD_THINGY53_NRF5340_CPUAPP_NS
-
-config UPDATEABLE_IMAGE_NUMBER
-	default 2
-
-config NRF53_UPGRADE_NETWORK_CORE
-	default y
-
-endif # BOARD_THINGY53_NRF5340_CPUAPP || BOARD_THINGY53_NRF5340_CPUAPP_NS
-
-# nRF5340 DK and the rest of the targets from the nRF53 series: mcuboot/boot/zephyr/prj.conf
-# Defaults below for the nRF53 series are overridden by the target-specific
-# defaults that are defined above (e.g. for the Thingy:53 target).
-config NRF53_UPGRADE_NETWORK_CORE
-	default n
-
-endif # SOC_SERIES_NRF53X
-
 endif # NCS_SAMPLE_MCUMGR_BT_OTA_DFU

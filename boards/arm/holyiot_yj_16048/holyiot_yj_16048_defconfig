@@ -15,7 +15,7 @@ CONFIG_GPIO=y
 CONFIG_PINCTRL=y
 
 # we use these pins for the keyboard
-CONFIG_NFCT_PINS_AS_GPIOS=y
+# CONFIG_NFCT_PINS_AS_GPIOS=y
 
 # enable settings
 CONFIG_FLASH=y
