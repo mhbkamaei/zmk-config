@@ -1,3 +1,5 @@
 config NFCT_PINS_AS_GPIOS
     bool "NFCT pins as GPIOs"
     depends on HAS_HW_NRF_NFCT && SOC_FAMILY_NRF
+config ZMK_SETTINGS_RESET_ON_START
+    default y
