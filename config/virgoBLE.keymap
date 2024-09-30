@@ -15,10 +15,10 @@
 
         default_layer {
             bindings = <
-                &kp Q      &kp W      &bt BT_CLR     &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
-                &kp A	   &kp S      &kp D   &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp QUOT
-                &kp Z      &kp X      &kp C      &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
-                                                     &kp A          &kp B         &kp SPACE        &kp BKSP
+                &sys_reset     &sys_reset      &sys_reset    &sys_reset     &sys_reset         &kp Y            &kp U          &kp I       &kp O      &kp P
+                &sys_reset     &sys_reset      &sys_reset    &sys_reset     &sys_reset         &kp H            &kp J          &kp K       &kp L      &kp QUOT
+                &sys_reset     &sys_reset      &sys_reset    &sys_reset     &sys_reset         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
+                                                             &sys_reset     &sys_reset         &kp SPACE     &kp BKSP
             >;
         };
 
