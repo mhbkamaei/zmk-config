@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <behaviors.dtsi>
+#include "dts/bindings/dfu.dtsi
 
 / {
         keymap {
@@ -15,10 +15,10 @@
 
         default_layer {
             bindings = <
-                &sys_reset     &sys_reset      &sys_reset    &sys_reset     &sys_reset         &kp Y            &kp U          &kp I       &kp O      &kp P
-                &sys_reset     &sys_reset      &sys_reset    &sys_reset     &sys_reset         &kp H            &kp J          &kp K       &kp L      &kp QUOT
-                &sys_reset     &sys_reset      &sys_reset    &sys_reset     &sys_reset         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
-                                                             &sys_reset     &sys_reset         &kp SPACE     &kp BKSP
+                &dfu     &dfu      &dfu    &dfu     &dfu         &kp Y            &kp U          &kp I       &kp O      &kp P
+                &dfu     &dfu      &dfu    &dfu     &dfu         &kp H            &kp J          &kp K       &kp L      &kp QUOT
+                &dfu     &dfu      &dfu    &dfu     &dfu         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
+                                                             &dfu     &dfu         &kp SPACE     &kp BKSP
             >;
         };
 
