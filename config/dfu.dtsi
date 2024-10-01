@@ -9,14 +9,7 @@
 / {
     behaviors {
         // Behavior can be invoked on peripherals, so name must be <= 8 characters.
-        sys_reset: sysreset {
-            compatible = "zmk,behavior-reset";
-            #binding-cells = <0>;
-            display-name = "DFU";
-        };
-
-        // Behavior can be invoked on peripherals, so name must be <= 8 characters.
-        bootloader: bootload {
+        dfu: dfu {
             compatible = "zmk,behavior-reset";
             type = <RST_DFU>;
             #binding-cells = <0>;
