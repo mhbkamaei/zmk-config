@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "dfu.h"
+
 / {
     behaviors {
         // Behavior can be invoked on peripherals, so name must be <= 8 characters.
@@ -16,7 +18,7 @@
         // Behavior can be invoked on peripherals, so name must be <= 8 characters.
         bootloader: bootload {
             compatible = "zmk,behavior-reset";
-            type = 0xA8;
+            type = <RST_DFU>;
             #binding-cells = <0>;
             display-name = "dfu";
         };
