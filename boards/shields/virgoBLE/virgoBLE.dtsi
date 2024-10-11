@@ -8,6 +8,7 @@
 
 / {
     chosen {
+        zephyr,display = &ssd1306_ssd1306_128x32;
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
     };
