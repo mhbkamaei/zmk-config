@@ -8,6 +8,7 @@
 #include <nordic/nrf52832_qfaa.dtsi>
 #include "holyiot_yj_16048-pinctrl.dtsi"
 #include "adafruit_partition.dtsi"
+#include "holyiot_yj_16048-oled.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -55,5 +56,9 @@
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
+    status = "okay";
+};
+
+&arduino_i2c {
     status = "okay";
 };
