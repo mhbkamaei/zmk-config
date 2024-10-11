@@ -8,7 +8,6 @@
 #include <nordic/nrf52832_qfaa.dtsi>
 #include "holyiot_yj_16048-pinctrl.dtsi"
 #include "adafruit_partition.dtsi"
-#include "holyiot_yj_16048-oled.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
