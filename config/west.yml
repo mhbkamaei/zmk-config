@@ -5,8 +5,8 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     #- name: caksoylar # <-- new entry
     #  url-base: https://github.com/caksoylar
-    #- name: mhbkamaei # <-- new entry
-    #  url-base: https://github.com/mhbkamaei
+    - name: mhbkamaei # <-- new entry
+      url-base: https://github.com/mhbkamaei
     - name: mcu-tools
       url-base: https://github.com/mcu-tools
   projects:
@@ -17,9 +17,9 @@ manifest:
     #- name: zmk-rgbled-widget # <-- new entry
     #  remote: caksoylar
     #  revision: main
-    #- name: zmk-led-module # <-- new entry
-     # remote: mhbkamaei
-     # revision: main
+    - name: zmk-led-module # <-- new entry
+      remote: mhbkamaei
+      revision: main
     - name: mcuboot
       remote: mcu-tools
       revision: main
