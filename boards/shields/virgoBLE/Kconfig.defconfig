@@ -6,6 +6,9 @@ config ZMK_SPLIT
 
 if SHIELD_VIRGOBLE_DONGLE
 
+config LED
+    default y
+
 config ZMK_KEYBOARD_NAME
     default "virgoBLE"
 
